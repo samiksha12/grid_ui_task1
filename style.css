@@ -1,0 +1,160 @@
+body {
+  background-color: #edf2f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "box1 box1 box2 box5"
+    "box3 box4 box4 box5";
+  gap: 30px;
+  padding: 15px;
+}
+
+.boxes {
+  border-radius: 5px;
+  padding: 20px;
+  -webkit-box-shadow: 7px 11px 20px -10px rgb(0 0 0 / 63%);
+    box-shadow: 7px 11px 20px -10px rgb(0 0 0 / 63%);
+
+}
+
+.box1 {
+  grid-area: box1;
+  background-color: #733fc8;
+  color: white;
+  background-image: url("image/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 50px;
+}
+
+.box2 {
+  grid-area: box2;
+  background-color: #49556b;
+  color: white;
+}
+.box3 {
+  grid-area: box3;
+  background-color: #ffffff;
+}
+
+.box4 {
+  grid-area: box4;
+
+  background-color: #18202d;
+  color: white;
+}
+.box5 {
+  grid-area: box5;
+  background-color: #ffffff;
+}
+.inner-container {
+  position: relative;
+}
+
+.inner-header {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image name"
+    "image email";
+}
+
+.profile-image {
+  grid-area: image;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  place-self: center;
+}
+
+.profile-image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.profile-name {
+  grid-area: name;
+
+  padding-left: 15px;
+}
+.profile-email {
+  grid-area: email;
+
+  padding-left: 15px;
+}
+.box1 .profile-name {
+  color: #ebd0ff;
+}
+.box2 .profile-name {
+  color: #a5acba;
+}
+.box3 .profile-name {
+  color: #8b8c91;
+}
+.box4 .profile-name{
+  color:#B9BDC6;
+}
+.box5 .profile-name{
+  color: #A3A5A9;
+}
+.box1 .profile-email {
+  color: #9566df;
+}
+
+.box2 .profile-email {
+  color: #69758b;
+}
+.box3 .profile-email {
+  color: #e2e2e6;
+}
+.box4 .profile-email{
+  color:#555B69;
+}
+.box5 .profile-email{
+  color:#DBDDDE;
+}
+.content-head {
+  font-size: 17px;
+  padding-top: 15px;
+}
+.box1 .content-head {
+  color: #ebd0ff;
+}
+.box2 .content-head {
+  color: #b8bfc6;
+}
+.box3 .content-head {
+  color: #646870;
+}
+.box4 .content-head{
+  color:#C2C8D2;
+}
+.box5 .content-head{
+  color:#373B42;
+}
+.content-sub {
+  font-size: 14px;
+  padding-top: 15px;
+}
+.box1 .content-sub {
+  color: #9a74d7;
+}
+.box2 .content-sub {
+  color: #929cab;
+}
+.box3 .content-sub {
+  color: #cbcdd0;
+}
+.box4 .content-sub{
+  color:#7D818C;
+}
+.box5 .content-sub{
+  color:#B8B8BA;
+}
