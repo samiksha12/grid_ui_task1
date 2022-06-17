@@ -19,8 +19,7 @@ body {
   border-radius: 5px;
   padding: 20px;
   -webkit-box-shadow: 7px 11px 20px -10px rgb(0 0 0 / 63%);
-    box-shadow: 7px 11px 20px -10px rgb(0 0 0 / 63%);
-
+  box-shadow: 7px 11px 20px -10px rgb(0 0 0 / 63%);
 }
 
 .box1 {
@@ -98,11 +97,11 @@ body {
 .box3 .profile-name {
   color: #8b8c91;
 }
-.box4 .profile-name{
-  color:#B9BDC6;
+.box4 .profile-name {
+  color: #b9bdc6;
 }
-.box5 .profile-name{
-  color: #A3A5A9;
+.box5 .profile-name {
+  color: #a3a5a9;
 }
 .box1 .profile-email {
   color: #9566df;
@@ -114,30 +113,30 @@ body {
 .box3 .profile-email {
   color: #e2e2e6;
 }
-.box4 .profile-email{
-  color:#555B69;
+.box4 .profile-email {
+  color: #555b69;
 }
-.box5 .profile-email{
-  color:#DBDDDE;
+.box5 .profile-email {
+  color: #dbddde;
 }
 .content-head {
   font-size: 17px;
   padding-top: 15px;
 }
 .box1 .content-head {
-  color: #F0D4FF;
+  color: #f0d4ff;
 }
 .box2 .content-head {
-  color: #CED4DB;
+  color: #ced4db;
 }
 .box3 .content-head {
   color: #606770;
 }
-.box4 .content-head{
-  color:#F9FFFF;
+.box4 .content-head {
+  color: #f9ffff;
 }
-.box5 .content-head{
-  color:#5F646B;
+.box5 .content-head {
+  color: #5f646b;
 }
 .content-sub {
   font-size: 14px;
@@ -152,9 +151,28 @@ body {
 .box3 .content-sub {
   color: #cbcdd0;
 }
-.box4 .content-sub{
-  color:#7D818C;
+.box4 .content-sub {
+  color: #7d818c;
 }
-.box5 .content-sub{
-  color:#B8B8BA;
+.box5 .content-sub {
+  color: #b8b8ba;
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:  5;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5";
+    gap: 30px;
+    padding: 15px;
+  }
+
 }
